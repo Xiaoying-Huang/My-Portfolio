@@ -4,33 +4,121 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:ital,wght@0,200;1,200&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Home</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/20194a5b06.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- hero section start -->
-  <div class="hero-image">
-    <img src="/img/hero.jpg" alt="This is the hero image." class="hero-image">
-    <div class="hero-text">
-      <h1>I am Xiaoying Huang</h1>
-      <p>And I'm a Front-end Developer based in Hertfordshire</p>
-      <button>Contact me</button><br><br>
-      <div class='social-media'>
-        <i class="fa fa-linkedin-square" style="font-size:36px"></i><a href="https://www.linkedin.com/in/xiaoyingh/" target='blank'>Linkedin</a><br><br>
-        <i class="fa fa-github" style="font-size:36px"></i><a href="https://github.com/Xiaoying-Huang" target='blank'>Github</a>
-      </div>
+  <!-- Hero start -->
+  <section class="hero">
+    <div class="hero-icon">
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-github"></i>
     </div>
-  </div>
-  <!-- hero section end -->
-  <!-- about me start -->
-  
-  <!-- about me end -->
+    <img src="/img/hero.jpg" alt="image" class="hero-img">
+    <div class="hero-text">
+      <h1>Hi, I'm Xiaoying Huang</h1>
+      <p>I'm a Front-End Developer from North Hertfordshire</p>
+      <button>Contact Me</button>
+    </div>
+  </section>
+  <!-- Hero end -->
+
+  <!-- About me start -->
+  <section class="about-me">
+    <h2 class="section-title">ABOUT ME</h2>
+    <p>I am a front-end developer from North Hertfordshire, UK. I have experience in responsive CSS, Javascript and React and have just finished a bootcamp with Purple Beard.</p>
+  </section>
+  <!-- About me end -->
+
+  <!-- Portfolio start -->
+  <h2 class="section-title">Portfolio</h2>
+  <section class="portfolio">
+    <article class="project">
+      <img src="/img/project-img.jpg" alt="" class="project-img">
+      <h3 id="project-title">Project Title 1</h3>
+      <ul id='project-info'>
+        <li>Live Website Link:</li>
+        <li>Github Link:</li>
+        <li>Technology Used: CSS, JavaScript</li>
+        <li>Summary: An API app</li>
+      </ul>
+    </article>
+    <article class="project">
+      <img src="/img/project-img.jpg" alt="" class="project-img">
+      <h3 id="project-title">Project Title 2</h3>
+      <ul id='project-info'>
+        <li>Live Website Link:</li>
+        <li>Github Link:</li>
+        <li>Technology Used: </li>
+        <li>Summary: A CRUD app</li>
+      </ul>
+    </article>
+    <article class="project">
+      <img src="/img/project-img.jpg" alt="" class="project-img">
+      <h3 id="project-title">Project Title 3</h3>
+      <ul id='project-info'>
+        <li>Live Website Link:</li>
+        <li>Github Link:</li>
+        <li>Technology Used: CSS, JavaScript</li>
+        <li>Summary: A React app</li>
+      </ul>
+    </article>
+    
+  </section>
+  <!-- Portfolio end -->
+
+  <!-- Get-in-touch start -->
+  <h2 class="section-title">Get In Touch</h2>
+<div class="contact">
+  <section class="Get-in-touch">
+    <p class='Get-in-touch-info'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat molestiae, autem consequatur sequi vel corrupti commodi eveniet dicta dolorum, porro quidem nobis reiciendis quibusdam explicabo laborum rerum cumque necessitatibus?</p>
+    <p class='social-media'>
+      <i class="fa-brands fa-linkedin"></i> Xiaoying Huang
+      <br>
+      <i class="fa-brands fa-github"></i> Xiaoying Huang
+    </p>
+  </section>
+  <!-- Get-in-touch end -->
+
+  <!-- Send-a-message start -->
+  <h2 class="section-title" id='send-a-message-title'>Send a Message</h2>
+  <section class="Send-a-message">
+    <form action="" class="section-form">
+      <label for="first-name">
+        First Name
+      </label>
+      <br>
+      <input type="text"  name='first-name' id='first-name'>
+      <br>
+      <label for="surname">
+        Surname
+      </label>
+      <br>
+      <input type="text" name="surname" id='surname'>
+      <br>
+      <label for="Email">
+        Email
+      </label>
+      <br>
+      <input type="email" name="Email" id="Email">
+      <br>
+      <label for="Message">
+        Message
+      </label>
+      <br>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <br>
+      <input type="button" value="Send a message" id='submit-button'>
+    </form>
+  </section>
+</div>
+    <!-- Send-a-message end -->
+
+    <!-- footer start -->
+    <footer>
+      &copy Copywright Xiaoying Huang 2022
+    </footer>
+    <!-- footer end -->
 </body>
 </html>

@@ -1,55 +1,222 @@
+/* Global setting */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body{
-background-color: bisque;
-height: 100%;
-font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  background-color: bisque;
 }
-/* hero section start */
-.hero-image{
-  height: 100%;
-  width: 100%;
+
+p{
+  font-size: 3vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+/* Hero start */
+.hero{
   position: relative;
 }
+
 .hero-text{
+  position: absolute;
+  width: 100%;
   text-align: center;
-  position: absolute;
-  top:30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  background-color:rgba(255, 228, 196, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 2% 10% 2% 10%;
 }
-.social-media{
-  font-size: 30px;
-  margin: 5px;
-  font-weight: bold;
+.hero-icon{
+  color: white;
   position: absolute;
-  top: -60%;
-  right: -50%;
+  right: 1vw;
+  top: 1vw;
+}
+.hero-img{
+  width: 100%;
+  height: auto;
+}
+
+.hero-text h1{
+font-size: 7vw;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+
+.hero-text p{
+  font-size: 3vw;
+  margin-bottom: 2rem;
+}
+
+.hero-text button{
+  border: none;
+  box-shadow: 6px rgb(223, 245, 220);
+  padding: 2%;
+  border-radius: 10%;
+  background-color: rgb(221, 80, 116);
   color: white;
 }
-.social-media:hover{
-  color: rgb(81, 198, 202);
+
+/* Hero end */
+
+/* About me start */
+
+.about-me {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  background-color: white;
 }
-.hero-text h1{
-  font-family: 'Sansita Swashed', cursive;
-  font-size: 100px;
-  color: rgb(215, 103, 243);
-  margin-bottom: 50px;
+
+.about-me p{
+  padding-top: 5vw;
+  padding-bottom: 5vw;
 }
-.hero-text p{
-  font-weight: bold;
-  font-style: italic;
-  font-size: 30px;
-  color: rgb(203, 112, 226);
-  margin-bottom: 50px;
+.section-title{
+  font-size: 5vw;
+  margin: 5vw 10vw;
 }
-.hero-text button{
-  font-family: 'Sansita Swashed', cursive;
-  background-color: rgba(215, 103, 243,0.6);
-  font-size: 50px;
-  color: rgba(34, 19, 37,0.4);
+/* About me end  */
+
+/* Portfolio start */
+
+.project{
+  width: 80vw;
+  margin: 0 auto;
+  padding-bottom: 5vw;
+  border-color: orange;
+  border-style: groove;
+  margin-bottom: 5vw;
+  box-shadow: 5px;
 }
-/* hero section end */
+.project img{
+  width: 100%;
+  margin: 0 auto;
+}
+#project-title{
+  font-size: 4vw;
+  text-align: center;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+li{
+  padding: 2vw;
+}
+#project-info{
+  font-size: 3vw;
+  list-style-type: none;
+  padding-left: 3vw;
+}
+/* Portfolio end */
+
+/* Get-in-touch start */
+.social-media{
+  margin-top: 3vw;
+}
+
+/* Get-in-touch end */
+
+/* Send-a-message start */
+.section-form{
+  font-size: 3vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.section-form input{
+  width: 100%;
+  margin-bottom: 3vw;
+}
+#message{
+  width: 100%;
+  margin-bottom: 3vw;
+}
+#submit-button{
+  font-size: 3vw;
+  height: 5vw;
+  background-color: rgb(224, 156, 28);
+  border-style: none;
+  border-radius: 2vw;
+  color: rgb(250, 252, 248);
+}
+/* Send-a-message end */
+
+/* footer start */
+footer{
+  background-color: rgb(223, 219, 175);
+  text-align: center;
+  font-size: 2vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+/* footer end */
+
+/* responsive coding */
+@media screen and (min-width: 768px) {
+  .hero-text{
+    top: 20%;
+  }
+
+  .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    row-gap: 5vw;
+    padding-left: 10vw;
+  }
+  .project{
+    width: 35%;
+    margin: 0;
+  }
+  .section-form input{
+    width: 100%;
+    margin-bottom: 3vw;
+    height: 3.5vw;
+  }
+
+}
+@media screen and (min-width: 1024px) {
+  .hero-text{
+    top: 20%;
+  }
+
+  .portfolio{
+    display: flex;
+  }
+  .project{
+    width: 28%;
+    margin: 0;
+    padding-bottom: 3vw;
+  }
+  #project-title{
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+  li{
+    padding: 0.5vw;
+  }
+  #project-info{
+    font-size: 1.5vw;
+    list-style-type: none;
+    padding-left: 1.5vw;
+  }
+  .contact{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .Get-in-touch-info{
+    display: none;
+  }
+
+  #send-a-message-title{
+    display: none;
+  }
+  .section-form{
+    width: 150%;
+  }
+}
